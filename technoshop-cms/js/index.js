@@ -1,13 +1,24 @@
 'use strict';
 
 import { modalBtn, modal } from './elems.js';
+import { formController } from './formController.js';
 import { modalContoller } from './modalController.js';
 import { previewController } from './previewController.js';
+import { tableController } from './tableController.js';
 
-modalContoller({ 
-  modal, 
-  modalBtn, 
-  classOpen: 'd-block', 
-  classClose: 'btn-close' 
-});
-previewController();
+const init = () => {
+  modalContoller({ 
+    modal, 
+    modalBtn, 
+    classOpen: 'd-block', 
+    classClose: 'btn-close' 
+  });
+  previewController();
+  tableController();
+  formController();
+};
+
+
+init();
+
+
