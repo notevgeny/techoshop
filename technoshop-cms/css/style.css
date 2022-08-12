@@ -62,10 +62,10 @@ iframe {
   cursor: pointer;
 }
 
-.table-row:hover {
+/* .table-row:hover {
   background-color: beige;
   cursor: ponter;
-}
+} */
 
 .btn-table {
   width: 24px;
